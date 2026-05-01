@@ -14,6 +14,7 @@ export function Counter({ bookVazhipadu, bookings, totalRevenue, retailItems, re
   // Primary devotee details (default applied to new cart lines)
   const [primaryName, setPrimaryName] = useState("");
   const [primaryNakshatram, setPrimaryNakshatram] = useState("");
+  const [primaryDate, setPrimaryDate] = useState(() => new Date().toISOString().slice(0, 10));
 
   // Cart: each line has its own devotee + nakshatram (defaults to primary, but editable)
   const [cart, setCart] = useState([]);
@@ -31,6 +32,7 @@ export function Counter({ bookVazhipadu, bookings, totalRevenue, retailItems, re
         vazhipaduId: vazhipadu.id,
         devoteeName: primaryName,
         nakshatram: primaryNakshatram,
+        preferredDate: primaryDate,
       },
     ]);
   };
@@ -54,6 +56,7 @@ export function Counter({ bookVazhipadu, bookings, totalRevenue, retailItems, re
         ...l,
         devoteeName: l.devoteeName || primaryName,
         nakshatram: l.nakshatram || primaryNakshatram,
+        preferredDate: l.preferredDate || primaryDate,
       }))
     );
   };
@@ -71,6 +74,7 @@ export function Counter({ bookVazhipadu, bookings, totalRevenue, retailItems, re
         vazhipaduId: l.vazhipaduId,
         devoteeName: (l.devoteeName || primaryName).trim(),
         nakshatram: (l.nakshatram || primaryNakshatram).trim(),
+        preferredDate: l.preferredDate || primaryDate,
       }));
       if (filled.some((l) => !l.devoteeName)) {
         setFeedback({ ok: false, msg: "Each vazhipadu line needs a devotee name." });
@@ -130,6 +134,7 @@ export function Counter({ bookVazhipadu, bookings, totalRevenue, retailItems, re
     setRetailAddCart([]);
     setPrimaryName("");
     setPrimaryNakshatram("");
+    setPrimaryDate(new Date().toISOString().slice(0, 10));
     setTimeout(() => setFeedback(null), 5000);
   };
 
@@ -244,6 +249,10 @@ export function Counter({ bookVazhipadu, bookings, totalRevenue, retailItems, re
             <div className="grid sm:grid-cols-2 gap-4">
               <Field label="Primary Devotee Name" value={primaryName} onChange={setPrimaryName} placeholder="Full name" />
               <NakshatramField label="Nakshatram" value={primaryNakshatram} onChange={setPrimaryNakshatram} />
+              <div>
+                <label className="block text-xs uppercase tracking-wider text-amber-900 mb-1">Pooja Date</label>
+                <input type="date" value={primaryDate} onChange={(e) => setPrimaryDate(e.target.value)} className="w-full bg-white/60 border border-amber-900/30 focus:border-amber-900 focus:outline-none px-3 py-2 text-sm" />
+              </div>
             </div>
             <p className="text-xs text-amber-800/70 italic mt-2">
               Applies as default to each cart line. You can override per line below — useful when booking for family members.
@@ -353,6 +362,12 @@ export function Counter({ bookVazhipadu, bookings, totalRevenue, retailItems, re
                             value={line.nakshatram}
                             onChange={(v) => updateLine(line.lineId, "nakshatram", v)}
                             placeholder={primaryNakshatram ? `Default: ${primaryNakshatram}` : "— Nakshatram —"}
+                          />
+                          <input
+                            type="date"
+                            value={line.preferredDate || primaryDate}
+                            onChange={(e) => updateLine(line.lineId, "preferredDate", e.target.value)}
+                            className="bg-white border border-amber-900/20 px-2 py-1 text-xs focus:border-amber-900 focus:outline-none col-span-2"
                           />
                         </div>
                       </div>
@@ -500,4 +515,3 @@ export function Counter({ bookVazhipadu, bookings, totalRevenue, retailItems, re
     </>
   );
 }
-

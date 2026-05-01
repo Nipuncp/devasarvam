@@ -211,7 +211,7 @@ export default function TempleManagement() {
   }, [inventory, bookings, issuances, openLog, poojaLog, housekeeping, events, requisitions, purchaseIndents, vendors, quotations, purchaseOrders, grns, bills, retailItems, retailSales, kioskOrders, lastBackupAt]);
 
   // Core cross-module logic: book a CART of vazhipadus → atomic inventory check → single bill, multiple line items
-  // cart: [{ vazhipaduId, devoteeName, nakshatram }, ...]
+  // cart: [{ vazhipaduId, devoteeName, nakshatram, preferredDate }, ...]
   const bookVazhipadu = (cart) => {
     if (!cart || cart.length === 0) return { ok: false, msg: "Cart is empty." };
 
@@ -261,6 +261,7 @@ export default function TempleManagement() {
       vazhipaduMalayalam: r.v.malayalam,
       devoteeName: r.devoteeName.trim(),
       nakshatram: r.nakshatram?.trim() || "",
+      preferredDate: r.preferredDate || ts.slice(0, 10),
       price: r.v.price,
       time: ts,
       area: r.v.area,

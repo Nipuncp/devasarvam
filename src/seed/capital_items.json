@@ -1,0 +1,7 @@
+[
+  { "id": "c1", "name": "Thiruvabharanam — Crown", "malayalam": "തിരുവാഭരണം", "custodian": "Melsanthi", "lastVerified": "2026-04-20", "condition": "Excellent", "material": "Gold", "weightGrams": 1850, "acquiredYear": 1987, "bookValue": 450000, "currentValue": 18500000 },
+  { "id": "c2", "name": "Silver Lamp Set (5)", "malayalam": "വെള്ളി വിളക്ക്", "custodian": "Kazhakam", "lastVerified": "2026-04-15", "condition": "Good", "material": "Silver", "weightGrams": 4200, "acquiredYear": 2003, "bookValue": 85000, "currentValue": 480000 },
+  { "id": "c3", "name": "Brass Uruli (large)", "malayalam": "ഉരുളി", "custodian": "Oottupura", "lastVerified": "2026-04-22", "condition": "Good", "material": "Brass", "weightGrams": 12000, "acquiredYear": 1995, "bookValue": 18000, "currentValue": 35000 },
+  { "id": "c4", "name": "Kalasham (silver)", "malayalam": "കലശം", "custodian": "Melsanthi", "lastVerified": "2026-04-20", "condition": "Excellent", "material": "Silver", "weightGrams": 850, "acquiredYear": 2010, "bookValue": 42000, "currentValue": 98000 },
+  { "id": "c5", "name": "Thidambu (deity carrier)", "malayalam": "തിടമ്പ്", "custodian": "Kazhakam", "lastVerified": "2026-04-10", "condition": "Good", "material": "Wood + Gold leaf", "weightGrams": 8500, "acquiredYear": 1972, "bookValue": 25000, "currentValue": 180000 }
+]

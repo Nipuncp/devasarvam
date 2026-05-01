@@ -1,0 +1,11 @@
+[
+  { "time": "04:30", "name": "Palli Unarthal", "malayalam": "പള്ളിയുണർത്തൽ" },
+  { "time": "05:00", "name": "Nirmalyam", "malayalam": "നിർമ്മാല്യം" },
+  { "time": "05:30", "name": "Abhishekam", "malayalam": "അഭിഷേകം" },
+  { "time": "06:30", "name": "Usha Pooja", "malayalam": "ഉഷ പൂജ" },
+  { "time": "08:00", "name": "Pantheeradi Pooja", "malayalam": "പന്തീരടി പൂജ" },
+  { "time": "11:00", "name": "Ucha Pooja", "malayalam": "ഉച്ച പൂജ" },
+  { "time": "17:30", "name": "Deeparadhana", "malayalam": "ദീപാരാധന" },
+  { "time": "19:30", "name": "Athazha Pooja", "malayalam": "അത്താഴ പൂജ" },
+  { "time": "20:30", "name": "Thripuka", "malayalam": "തൃപ്പുക" }
+]

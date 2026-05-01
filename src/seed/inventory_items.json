@@ -1,0 +1,13 @@
+[
+  { "id": "i1", "name": "Coconut", "malayalam": "നാളികേരം", "unit": "nos", "qty": 240, "opening": 240, "totalReceived": 0, "totalIssued": 0, "reorder": 50, "unitCost": 35, "type": "consumable" },
+  { "id": "i2", "name": "Ghee", "malayalam": "നെയ്യ്", "unit": "kg", "qty": 18.5, "opening": 18.5, "totalReceived": 0, "totalIssued": 0, "reorder": 5, "unitCost": 620, "type": "consumable" },
+  { "id": "i3", "name": "Camphor", "malayalam": "കർപ്പൂരം", "unit": "kg", "qty": 2.4, "opening": 2.4, "totalReceived": 0, "totalIssued": 0, "reorder": 0.5, "unitCost": 850, "type": "consumable" },
+  { "id": "i4", "name": "Kumkum", "malayalam": "കുങ്കുമം", "unit": "kg", "qty": 1.8, "opening": 1.8, "totalReceived": 0, "totalIssued": 0, "reorder": 0.3, "unitCost": 480, "type": "consumable" },
+  { "id": "i5", "name": "Akshatam", "malayalam": "അക്ഷതം", "unit": "kg", "qty": 3.2, "opening": 3.2, "totalReceived": 0, "totalIssued": 0, "reorder": 0.5, "unitCost": 90, "type": "consumable" },
+  { "id": "i6", "name": "Flowers", "malayalam": "പുഷ്പം", "unit": "kg", "qty": 6.5, "opening": 6.5, "totalReceived": 0, "totalIssued": 0, "reorder": 2, "unitCost": 220, "type": "consumable" },
+  { "id": "i7", "name": "Tulasi", "malayalam": "തുളസി", "unit": "kg", "qty": 1.2, "opening": 1.2, "totalReceived": 0, "totalIssued": 0, "reorder": 0.3, "unitCost": 180, "type": "consumable" },
+  { "id": "i8", "name": "Agarbathi", "malayalam": "ചന്ദന തിരി", "unit": "sticks", "qty": 480, "opening": 480, "totalReceived": 0, "totalIssued": 0, "reorder": 100, "unitCost": 1.5, "type": "consumable" },
+  { "id": "i9", "name": "Plantain", "malayalam": "നേന്ത്രപ്പഴം", "unit": "nos", "qty": 36, "opening": 36, "totalReceived": 0, "totalIssued": 0, "reorder": 12, "unitCost": 12, "type": "consumable" },
+  { "id": "i10", "name": "Rice", "malayalam": "അരി", "unit": "kg", "qty": 85, "opening": 85, "totalReceived": 0, "totalIssued": 0, "reorder": 20, "unitCost": 55, "type": "consumable" },
+  { "id": "i11", "name": "Vegetables", "malayalam": "പച്ചക്കറി", "unit": "kg", "qty": 22, "opening": 22, "totalReceived": 0, "totalIssued": 0, "reorder": 8, "unitCost": 60, "type": "consumable" }
+]

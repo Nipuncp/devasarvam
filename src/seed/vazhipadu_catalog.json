@@ -1,0 +1,9 @@
+[
+  { "id": "v1", "name": "Ganapathi Homam", "malayalam": "ഗണപതി ഹോമം", "price": 501, "area": "Homakundam", "items": [["Coconut", 5], ["Ghee", 0.5], ["Camphor", 0.05], ["Kumkum", 0.02], ["Akshatam", 0.1]] },
+  { "id": "v2", "name": "Archana", "malayalam": "അർച്ചന", "price": 21, "area": "Sreekovil", "items": [["Flowers", 0.05], ["Camphor", 0.005], ["Kumkum", 0.005], ["Agarbathi", 2]] },
+  { "id": "v3", "name": "Pushpanjali", "malayalam": "പുഷ്പാഞ്ജലി", "price": 51, "area": "Sreekovil", "items": [["Flowers", 0.15], ["Tulasi", 0.05], ["Camphor", 0.01]] },
+  { "id": "v4", "name": "Neyyabhishekam", "malayalam": "നെയ്യഭിഷേകം", "price": 151, "area": "Sreekovil", "items": [["Ghee", 0.25], ["Flowers", 0.1], ["Camphor", 0.02]] },
+  { "id": "v5", "name": "Bhagavathi Seva", "malayalam": "ഭഗവതി സേവ", "price": 751, "area": "Namaskara Mandapam", "items": [["Coconut", 3], ["Flowers", 0.5], ["Ghee", 0.3], ["Plantain", 6], ["Camphor", 0.05]] },
+  { "id": "v6", "name": "Niramala", "malayalam": "നിറമാല", "price": 1101, "area": "Sreekovil", "items": [["Flowers", 2], ["Tulasi", 0.5], ["Camphor", 0.05]] },
+  { "id": "v7", "name": "Annadanam (per plate)", "malayalam": "അന്നദാനം", "price": 25, "area": "Oottupura", "items": [["Rice", 0.15], ["Vegetables", 0.2], ["Ghee", 0.02]] }
+]
